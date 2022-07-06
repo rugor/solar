@@ -1,8 +1,8 @@
-# minima
+# solar
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+*solar is a Jekyll theme*.
 
-[Theme preview](https://jekyll.github.io/minima/)
+[Theme preview](https://rugor.github.io/solar/)
 
 ![minima theme preview](/screenshot.png)
 
