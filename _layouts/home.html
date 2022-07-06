@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
+<section id="content">
+<!--   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
@@ -29,6 +29,32 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  {%- endif -%} -->
 
-</div>
+    <!-- Latest article feature -->
+    <ul class="cols cover low">
+      {% for post in site.posts limit:1 %}
+      <li>
+        <a href="{{ post.url | relative_url }}" rel="bookmark" title="Permalink to {{ post.title | escape }}">
+          <h2 class="entry-title">{{ post.title | escape }}</h2>
+        </a>
+        <a class="category" href="#">Low-tech solutions</a>
+        {%- if post.summary -%}
+        <p class="index-summary">
+          {{ post.summary | truncatewords: 32, " ..." }}
+        </p>
+        {%- endif -%}
+        {%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
+        <time class="published"
+          datetime="{{ post.date | date: date_format }}">{{ post.date | date: date_format }}</time>
+      </li>
+      <li>
+        <a href="{{ post.url | relative_url }}" rel="bookmark" title="Permalink to {{ post.title | escape }}">
+          <div class="featured-img" style="background-image: url('{{ site.baseurl }}/assets/img/{{ post.image }}');">
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </section>
