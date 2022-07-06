@@ -1,11 +1,9 @@
 ---
 layout: page
-title: About
-permalink: /about/
-subtitle: This website is a solar-powered, self-hosted version of Low-tech Magazine. It has been designed to radically reduce the energy use associated with accessing our content.
+title: Privacy
+permalink: /privacy/
+subtitle: This website does not use cookies, advertising services, or tracking codes. We collect server logs to understand traffic on the server. This information is viewed only by us and is not used to make user profiles.
 ---
-
-![alt text](/assets/img/placeholder.png "Title")
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

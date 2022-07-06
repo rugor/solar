@@ -44,9 +44,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-loading-lazy # adds to all images loading=lazy
 
 # paginate
-paginate: 5
+paginate: 12
 paginate_path: '/page:num/'
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)

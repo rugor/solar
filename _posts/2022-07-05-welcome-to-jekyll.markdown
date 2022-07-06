@@ -5,7 +5,11 @@ date:   2022-07-05 18:15:58 -0700
 categories: obs
 image: placeholder.png
 summary: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+# ![alt text]({{ '/assets/img/placeholder.png' | relative_url }})
 ---
+
+![alt text](/assets/img/placeholder.png "Title")
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:
