@@ -3,33 +3,6 @@ layout: default
 ---
 
 <section id="content">
-<!--   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%} -->
 
     <!-- Latest article feature -->
     <ul class="cols cover low">
@@ -56,5 +29,31 @@ layout: default
       </li>
       {% endfor %}
     </ul>
+
+    <!-- Recent Articles -->
+    {%- if site.posts.size > 1 -%}
+    <ul class="cols recent">
+      {%- for post in site.posts offset:1 -%}
+      <!-- add a category-based class -->
+      <!-- obs, low, hig -->
+      <li class="{{ post.categories[0] | escape}}">
+        <article>
+          <a href="{{ post.url | relative_url }}" rel="bookmark" title="Permalink to {{ post.title | escape }}">
+            <div class="featured-img" style="background-image: url('{{ site.baseurl }}/assets/img/{{ post.image }}');">
+            </div>
+            <h2 class="entry-title">{{ post.title | escape }}</h2>
+          </a>
+          <a class="category" href="#">Obsolete Technology</a>
+          {%- if post.summary -%}
+          {{ post.summary| truncatewords: 32, " ..." }}
+          {%- endif -%}
+          {%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
+          <time class="published"
+            datetime="{{ post.date | date: date_format }}">{{ post.date | date: date_format }}</time>
+        </article>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
 
   </section>
