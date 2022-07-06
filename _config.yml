@@ -47,7 +47,7 @@ plugins:
   - jekyll-loading-lazy # adds to all images loading=lazy
 
 # paginate
-paginate: 12
+paginate: 13
 paginate_path: '/page:num/'
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)

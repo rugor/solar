@@ -6,7 +6,7 @@ layout: default
 
     <!-- Latest article feature -->
     <ul class="cols cover low">
-      {% for post in site.posts limit:1 %}
+      {% for post in paginator.posts limit:1 %}
       <li>
         <a href="{{ post.url | relative_url }}" rel="bookmark" title="Permalink to {{ post.title | escape }}">
           <h2 class="entry-title">{{ post.title | escape }}</h2>

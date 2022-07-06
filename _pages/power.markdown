@@ -2,10 +2,11 @@
 layout: page
 title: Power
 permalink: /power/
-subtitle: This website runs on a solar powered server located in Barcelona, and will go off-line during longer periods of bad weather. This page shows live data relating to power supply, power demand, and energy storage.#
+subtitle: This website runs on a solar powered server located in Barcelona, and will go off-line during longer periods of bad weather. This page shows live data relating to power supply, power demand, and energy storage.
 # [Some Link]({% post_url 2010-07-21-name-of-post %}) // make an interal link
-# li:has(> a.active) { /* styles to apply to the li tag */ }
 ---
+
+![alt text](/assets/img/placeholder.png "Title")
 
 Who has the power?
 

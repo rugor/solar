@@ -1,23 +1,43 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<section class="article" id="content">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+  <!--     <p class="summary">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}</p> -->
+
+  <header class="post-header">
+    <div class="submenu">
+      <a class="category category-obs" href="#">Obsolete
+        Technology</a>
+    </div>
+    <h1 class="entry-title">{{ page.title | escape }}</h1>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="entry-content">
     {{ content }}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</section>
+
+<ul id="post-nav">
+  <li class="newer">
+    <p class="gray">← newer article</p>
+    <a href="#">
+      How to Build a Practical Household Bike&nbsp;Generator
+    </a>
+  </li>
+  <li class="older">
+    <p class="gray">older article →</p>
+    <a href="#">
+      The Printed Website: Volume <span class="caps">III</span> <span class="amp">&amp;</span> The&nbsp;Comments
+    </a>
+  </li>
+</ul>
