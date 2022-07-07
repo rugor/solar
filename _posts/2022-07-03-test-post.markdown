@@ -4,7 +4,7 @@ title:  "Test post! A quick summary, of what the post is about"
 date:   2022-07-03 09:52:26 -0700
 image: placeholder.png
 categories: obs
-summary: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+summary:  Amet turpis at, scelerisque accumsan felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 ---
 
 ![alt text](/assets/img/placeholder.png "Title")

@@ -4,8 +4,11 @@ title:  "Test post! A quick summary, of what the post is about"
 date:   2022-07-03 09:52:26 -0700
 image: placeholder.png
 categories: low
-summary: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+summary:  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ac sapien non massa convallis venenatis. You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
 ---
+
+![alt text](/assets/img/placeholder.png "Title")
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

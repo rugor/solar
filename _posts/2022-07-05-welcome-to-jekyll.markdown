@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2022-07-05 18:15:58 -0700
 categories: obs
 image: placeholder.png
-summary: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
+summary: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.Phasellus ex dolor, lobortis sit.
 # ![alt text]({{ '/assets/img/placeholder.png' | relative_url }})
 ---
 

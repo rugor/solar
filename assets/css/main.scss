@@ -186,7 +186,7 @@ CATEGORY COLORS
 */
 .category,
 .category-description p {
-  display: none;
+  // display: none;
 }
 
 .low .featured-img,
@@ -859,63 +859,6 @@ a.footnote-ref:hover {
 }
 
 .show .ref {
-  display: block;
-}
-
-/*
-COMMENTS
-*/
-#comments {
-  cursor: pointer;
-}
-
-#comments:hover {
-  color: $color_sub;
-}
-
-#comments::after {
-  content: " +";
-  display: inline-block;
-  padding-left: 10px;
-}
-
-#comments.expanded::after {
-  content: " −";
-}
-
-#comment-list {
-  display: none;
-  margin: auto;
-  margin-top: 1rem;
-  font-size: .75rem;
-  font-family: monospace;
-  counter-reset: comments;
-  overflow: hidden;
-}
-
-#comment-list a {
-  word-wrap: break-word;
-}
-
-#comment-list h5 {
-  font-size: .75rem;
-  font-weight: normal;
-  border-top: 1px solid $color;
-  padding-top: 15px;
-  width: 100%;
-}
-
-#comment-list h5::before {
-  counter-increment: comments;
-  content: counter(comments) ")";
-  padding-right: 5px;
-}
-
-#comment-list p {
-  width: 100%;
-}
-
-#comment-list.show {
   display: block;
 }
 

@@ -3,41 +3,34 @@ layout: default
 ---
 <section class="article" id="content">
 
-  <!--     <p class="summary">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p> -->
-
   <header class="post-header">
     <div class="submenu">
-      <a class="category category-obs" href="#">Obsolete
-        Technology</a>
+      <a class="category category-low" href="https://solar.lowtechmagazine.com/low-tech-solutions.html">
+        Low-tech Solutions</a>
     </div>
     <h1 class="entry-title">{{ page.title | escape }}</h1>
+    <p class="summary">{{ page.summary | escape }}</p>
   </header>
 
   <div class="entry-content">
     {{ content }}
   </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </section>
 
 <ul id="post-nav">
+  {% if page.previous.url %}
   <li class="newer">
-    <p class="gray">← newer article</p>
-    <a href="#">
-      How to Build a Practical Household Bike&nbsp;Generator
+    <p class="gray">← newer post</p>
+    <a href="{{page.next.url}}">  
+      {{page.next.title}}
     </a>
   </li>
+  {% endif %}
   <li class="older">
-    <p class="gray">older article →</p>
-    <a href="#">
-      The Printed Website: Volume <span class="caps">III</span> <span class="amp">&amp;</span> The&nbsp;Comments
+    <p class="gray">older post →</p>
+    <a href="{{page.previous.url}}">
+      {{page.previous.title}}
     </a>
   </li>
 </ul>
